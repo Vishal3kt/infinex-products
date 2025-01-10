@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer className="section-p1">
             <div className="col">
-                <img className="logo" src="../public/logo-website.png" alt="" />
+                <img className="logo" src="logo-website.png" alt="" />
                 <h4>Contact</h4>
                 <p><strong>Address:</strong> 562 Wellington Road, Street 32, San Francisco</p>
                 <p><strong>Phone:</strong> +01 2222 345 / (+91) 0 123 456 789</p>

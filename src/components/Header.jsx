@@ -14,7 +14,7 @@ const Header = () => {
     return (
         <section id="header">
             <a >
-                <img src="../public/logo-website.png" className="logo" alt="Logo" />
+                <img src="logo-website.png" className="logo" alt="Logo" />
             </a>
 
             <div>
