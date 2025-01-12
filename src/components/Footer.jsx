@@ -43,8 +43,8 @@ const Footer = () => {
                 <h4>Install App</h4>
                 <p>From App Store or Google Play</p>
                 <div className="row">
-                    <img src="	http://127.0.0.1:5502/img/pay/app.jpg" alt="" />
-                    <img src="	http://127.0.0.1:5502/img/pay/play.jpg" alt="" />
+                    <img src="http://127.0.0.1:5502/img/pay/app.jpg" alt="" />
+                    <img src="http://127.0.0.1:5502/img/pay/play.jpg" alt="" />
                 </div>
                 <p>Secured Payment Gateways</p>
                 <img src="http://127.0.0.1:5502/img/pay/pay.png" alt="" />
