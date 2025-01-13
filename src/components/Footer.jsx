@@ -6,9 +6,9 @@ const Footer = () => {
             <div className="col">
                 <img className="logo" src="logo-website.png" alt="" />
                 <h4>Contact</h4>
-                <p><strong>Address:</strong> 562 Wellington Road, Street 32, San Francisco</p>
-                <p><strong>Phone:</strong> +01 2222 345 / (+91) 0 123 456 789</p>
-                <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+                <p><strong>Address:</strong> Belgavi, Karnataka</p>
+                <p><strong>Phone:</strong> (+91) 9739750841</p>
+                <p><strong>Hours:</strong> 09:00 - 18:00, Mon - Sun</p>
                 <div className="follow">
                     <h4>Follow us</h4>
                     <div className="icon">
@@ -23,20 +23,20 @@ const Footer = () => {
 
             <div className="col">
                 <h4>About</h4>
-                <a href="#">About us</a>
-                <a href="#">Delivery Information</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms & Conditions</a>
-                <a href="#">Contact Us</a>
+                <a >About us</a>
+                <a >Delivery Information</a>
+                <a >Privacy Policy</a>
+                <a >Terms & Conditions</a>
+                <a >Contact Us</a>
             </div>
 
             <div className="col">
                 <h4>My Account</h4>
-                <a href="#">Sign In</a>
-                <a href="#">View Cart</a>
-                <a href="#">My Wishlist</a>
-                <a href="#">Track My Order</a>
-                <a href="#">Help</a>
+                <a >Sign In</a>
+                <a >View Cart</a>
+                <a >My Wishlist</a>
+                <a >Track My Order</a>
+                <a >Help</a>
             </div>
 
             <div className="col install">
@@ -51,7 +51,7 @@ const Footer = () => {
             </div>
 
             <div className="copyright">
-                <p>© 2023, Sahad cmd - HTML CSS Ecommerce Template</p>
+                <p>© 2025, infinex-products - Ecommerce Website</p>
             </div>
         </footer>
     )

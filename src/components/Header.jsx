@@ -32,8 +32,8 @@ const Header = () => {
             </div>
 
             <div id="mobile">
-                <a href="cart.html"><i className="bx bx-shopping-bag"></i></a>
-                <i id="bar" className="bx bx-menu" onClick={handleBarClick}></i>
+                <a><i style={{ cursor: 'pointer' }} className="bx bx-shopping-bag"></i></a>
+                <i id="bar" style={{ cursor: 'pointer' }} className="bx bx-menu" onClick={handleBarClick}></i>
             </div>
         </section>
     );
