@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import "./Card.css";
 import { Dialog, DialogTitle, DialogContent, TextField, Button, DialogActions } from "@mui/material";
@@ -15,6 +15,10 @@ const Card = () => {
         alert("Number submitted!");
         setOpen(false);
     };
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <div className="product-card">
