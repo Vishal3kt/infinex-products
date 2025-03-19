@@ -168,7 +168,7 @@ body {
 /* Main part of page */
 
 #main {
-  background-image: url("http://127.0.0.1:5502/img/bg-img.jpg");
+  background-image: url("https://infinexproducts.com/img/bg-img.jpg");
   background-size: cover;
   height: 90vh;
   width: 100%;
@@ -345,7 +345,7 @@ body {
   text-align: center;
   align-items: center;
   flex-direction: column;
-  background-image: url("http://127.0.0.1:5502/img/banner/b2.jpg");
+  background-image: url("http://infinexproducts.com/img/banner/b2.jpg");
   width: 100%;
   height: 30vh;
   background-size: cover;
