@@ -1,42 +1,37 @@
 import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
-    const [isNavActive, setIsNavActive] = useState(false);
+  const [isNavActive, setIsNavActive] = useState(false);
+  const location = useLocation(); // ⬅️ get current path
 
-    const handleBarClick = () => {
-        setIsNavActive(true);
-    };
+  const handleBarClick = () => setIsNavActive(true);
+  const handleCloseClick = () => setIsNavActive(false);
 
-    const handleCloseClick = () => {
-        setIsNavActive(false);
-    };
+  const isActive = (path) => location.pathname === path ? 'active' : '';
 
-    return (
-        <section id="header">
-            <a >
-                <img src="logo-website.png" className="logo" alt="Logo" />
-            </a>
+  return (
+    <section id="header">
+      <Link to="/">
+        <img src="logo-website.png" className="logo" alt="Logo" />
+      </Link>
 
-            <div>
-                <ul id="navbar" className={isNavActive ? 'active' : ''}>
-                    <li><a className="active" >Home</a></li>
-                    <li><a >Shop</a></li>
-                    <li><a >Blog</a></li>
-                    <li><a >About</a></li>
-                    <li><a >Contact</a></li>
-                    <li id="lg-bag"><a ><i className="bx bx-shopping-bag"></i></a></li>
-                    <a id="close" onClick={handleCloseClick}>
-                        <i className="bx bx-x"></i>
-                    </a>
-                </ul>
-            </div>
+      <div>
+        <ul id="navbar" className={isNavActive ? 'active' : ''}>
+          <li><Link to="/" className={isActive('/')}>Home</Link></li>
+          <li><Link to="/about" className={isActive('/about')}>About</Link></li>
+          <li><Link to="/contact" className={isActive('/contact')}>Contact</Link></li>
+          <a id="close" onClick={handleCloseClick}>
+            <i className="bx bx-x"></i>
+          </a>
+        </ul>
+      </div>
 
-            <div id="mobile">
-                <a><i style={{ cursor: 'pointer' }} className="bx bx-shopping-bag"></i></a>
-                <i id="bar" style={{ cursor: 'pointer' }} className="bx bx-menu" onClick={handleBarClick}></i>
-            </div>
-        </section>
-    );
+      <div id="mobile">
+        <i id="bar" className="bx bx-menu" style={{ cursor: 'pointer' }} onClick={handleBarClick}></i>
+      </div>
+    </section>
+  );
 };
 
 export default Header;

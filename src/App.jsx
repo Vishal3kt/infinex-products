@@ -1,40 +1,27 @@
+import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Banner from './components/Banner';
-import Feature from './components/Feature';
-import Footer from './components/Footer';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Header from './components/Header';
-import Main from './components/Main';
-import NewsLetter from './components/NewsLetter';
-import ProductTop from './components/ProductTop';
-import Layout from './pages/Layout';
-import Card from './components/Card';
+import Footer from './components/Footer';
+import AppRoutes from './routes';
+import initializeDatabase from './firebase/initializeDatabase';
 
-function App() {
+const App = () => {
+  React.useEffect(() => {
+    initializeDatabase();
+  }, []);
+
   return (
     <Router>
-      <Header />
-      <Routes>
-        <Route path="/card" element={<Card />} />
-
-        <Route
-          path="/"
-          element={
-            <>
-              <Main />
-              <Layout>
-                <ProductTop />
-                <Feature />
-                <Banner />
-                <NewsLetter />
-              </Layout>
-            </>
-          }
-        />
-      </Routes>
-      <Footer />
+      <div className="flex flex-col min-h-screen bg-white">
+        <Header />
+        <main className="flex-grow w-full max-w-full overflow-x-hidden py-12">
+          <AppRoutes />
+        </main>
+        <Footer />
+      </div>
     </Router>
   );
-}
+};
 
 export default App;

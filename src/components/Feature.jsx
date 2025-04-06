@@ -1,30 +1,32 @@
-import React from 'react'
+import { useState, useEffect } from 'react';
+import { ref, onValue } from 'firebase/database';
+import { db } from '../firebase/config';
 
 const Feature = () => {
+    const [features, setFeatures] = useState([]);
+
+    useEffect(() => {
+        const featuresRef = ref(db, 'features');
+        const unsubscribe = onValue(featuresRef, (snapshot) => {
+            const data = snapshot.val();
+            if (data) {
+                setFeatures(Object.values(data));
+            }
+        });
+
+        return () => unsubscribe();
+    }, []);
+
     return (
         <section id="feature" className="section-p1">
-            <div className="fe-box">
-                <img src="f1.png" alt="" />
-                <h6>Free Shipping</h6>
-            </div>
-            <div className="fe-box">
-                <img src="f2.png" alt="" />
-                <h6>Online Order</h6>
-            </div>
-            <div className="fe-box">
-                <img src="f3.png" alt="" />
-                <h6>Save Money</h6>
-            </div>
-            <div className="fe-box">
-                <img src="f4.png" alt="" />
-                <h6>Happy Sell</h6>
-            </div>
-            <div className="fe-box">
-                <img src="f5.png" alt="" />
-                <h6>F24/7 Support</h6>
-            </div>
+            {features.map((feature) => (
+                <div key={feature.id} className="fe-box">
+                    <img src={feature.image} alt={feature.title} />
+                    <h6>{feature.title}</h6>
+                </div>
+            ))}
         </section>
-    )
-}
+    );
+};
 
-export default Feature
+export default Feature;
