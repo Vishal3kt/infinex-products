@@ -76,7 +76,7 @@ const Footer = () => {
                                         '&:hover': { color: '#2563eb' }
                                     }}
                                 >
-                                    infinexproducts@gmail.com
+                                    info@infinexproducts.com
                                 </Typography>
                             </Box>
                         </Stack>
