@@ -133,42 +133,54 @@ const Footer = () => {
                         {new Date().getFullYear()} Infinex Products. All rights reserved.
                     </Typography>
                     <Box sx={{ display: 'flex', gap: 1 }}>
-                        <IconButton sx={{
-                            color: '#4b5563',
-                            '&:hover': {
-                                color: '#2563eb',
-                                bgcolor: '#f1f5f9'
-                            }
-                        }}>
-                            <FacebookIcon />
-                        </IconButton>
-                        <IconButton sx={{
-                            color: '#4b5563',
-                            '&:hover': {
-                                color: '#2563eb',
-                                bgcolor: '#f1f5f9'
-                            }
-                        }}>
-                            <TwitterIcon />
-                        </IconButton>
-                        <IconButton sx={{
-                            color: '#4b5563',
-                            '&:hover': {
-                                color: '#2563eb',
-                                bgcolor: '#f1f5f9'
-                            }
-                        }}>
-                            <InstagramIcon />
-                        </IconButton>
-                        <IconButton sx={{
-                            color: '#4b5563',
-                            '&:hover': {
-                                color: '#2563eb',
-                                bgcolor: '#f1f5f9'
-                            }
-                        }}>
-                            <LinkedInIcon />
-                        </IconButton>
+                        <a>
+                            <IconButton sx={{
+                                color: '#4b5563',
+                                '&:hover': {
+                                    color: '#2563eb',
+                                    bgcolor: '#f1f5f9'
+                                }
+                            }}>
+                                <FacebookIcon />
+                            </IconButton>
+                        </a>
+                        <a>
+                            <IconButton sx={{
+                                color: '#4b5563',
+                                '&:hover': {
+                                    color: '#2563eb',
+                                    bgcolor: '#f1f5f9'
+                                }
+                            }}>
+                                <TwitterIcon />
+                            </IconButton>
+                        </a>
+                        <a
+                            href="https://www.instagram.com/infinex_products?igsh=NjdrZnE4NmppaGY0"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <IconButton sx={{
+                                color: '#4b5563',
+                                '&:hover': {
+                                    color: '#2563eb',
+                                    bgcolor: '#f1f5f9'
+                                }
+                            }}>
+                                <InstagramIcon />
+                            </IconButton>
+                        </a>
+                        <a>
+                            <IconButton sx={{
+                                color: '#4b5563',
+                                '&:hover': {
+                                    color: '#2563eb',
+                                    bgcolor: '#f1f5f9'
+                                }
+                            }}>
+                                <LinkedInIcon />
+                            </IconButton>
+                        </a>
                     </Box>
                 </Box>
             </Container>
