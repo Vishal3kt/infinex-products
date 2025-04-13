@@ -654,7 +654,7 @@
 }
 
 /* Dark mode */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 
     .product-card,
     .dialog-container,
@@ -700,4 +700,4 @@
     .skeleton-price {
         background: linear-gradient(90deg, #2d3748 25%, #4a5568 50%, #2d3748 75%);
     }
-}
+} */

@@ -54,7 +54,7 @@
 }
 
 /* Dark mode support */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     .loader-container {
         background: rgba(17, 24, 39, 0.8);
     }
@@ -71,4 +71,4 @@
     .loader-text {
         color: #3b82f6;
     }
-}
+} */

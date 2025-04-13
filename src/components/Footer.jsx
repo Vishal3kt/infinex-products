@@ -46,17 +46,17 @@ const Footer = () => {
                             <Box sx={{ display: 'flex', alignItems: 'center' }}>
                                 <LocationOnIcon sx={{ mr: 1, color: '#2563eb' }} />
                                 <Typography variant="body1" sx={{ color: '#4b5563' }}>
-                                    Belgavi, Karnataka
+                                    Belagavi, Karnataka
                                 </Typography>
                             </Box>
                             <Box sx={{ display: 'flex', alignItems: 'center' }}>
                                 <PhoneIcon sx={{ mr: 1, color: '#2563eb' }} />
-                                <Typography 
-                                    variant="body1" 
-                                    component="a" 
-                                    href="tel:+918088174565" 
-                                    sx={{ 
-                                        color: '#4b5563', 
+                                <Typography
+                                    variant="body1"
+                                    component="a"
+                                    href="tel:+918088174565"
+                                    sx={{
+                                        color: '#4b5563',
                                         textDecoration: 'none',
                                         '&:hover': { color: '#2563eb' }
                                     }}
@@ -66,17 +66,17 @@ const Footer = () => {
                             </Box>
                             <Box sx={{ display: 'flex', alignItems: 'center' }}>
                                 <EmailIcon sx={{ mr: 1, color: '#2563eb' }} />
-                                <Typography 
-                                    variant="body1" 
-                                    component="a" 
-                                    href="mailto:info@infinexproducts.com" 
-                                    sx={{ 
-                                        color: '#4b5563', 
+                                <Typography
+                                    variant="body1"
+                                    component="a"
+                                    href="mailto:info@infinexproducts.com"
+                                    sx={{
+                                        color: '#4b5563',
                                         textDecoration: 'none',
                                         '&:hover': { color: '#2563eb' }
                                     }}
                                 >
-                                    info@infinexproducts.com
+                                    infinexproducts@gmail.com
                                 </Typography>
                             </Box>
                         </Stack>
@@ -89,7 +89,7 @@ const Footer = () => {
                         </Typography>
                         <Stack spacing={2}>
                             <Link to="/" style={{ textDecoration: 'none' }}>
-                                <Typography variant="body1" sx={{ 
+                                <Typography variant="body1" sx={{
                                     color: '#4b5563',
                                     '&:hover': { color: '#2563eb' },
                                     transition: 'color 0.2s'
@@ -98,7 +98,7 @@ const Footer = () => {
                                 </Typography>
                             </Link>
                             <Link to="/about" style={{ textDecoration: 'none' }}>
-                                <Typography variant="body1" sx={{ 
+                                <Typography variant="body1" sx={{
                                     color: '#4b5563',
                                     '&:hover': { color: '#2563eb' },
                                     transition: 'color 0.2s'
@@ -107,7 +107,7 @@ const Footer = () => {
                                 </Typography>
                             </Link>
                             <Link to="/contact" style={{ textDecoration: 'none' }}>
-                                <Typography variant="body1" sx={{ 
+                                <Typography variant="body1" sx={{
                                     color: '#4b5563',
                                     '&:hover': { color: '#2563eb' },
                                     transition: 'color 0.2s'
@@ -122,10 +122,10 @@ const Footer = () => {
                 <Divider sx={{ my: 4 }} />
 
                 {/* Bottom Section */}
-                <Box sx={{ 
-                    display: 'flex', 
-                    justifyContent: 'space-between', 
-                    alignItems: 'center', 
+                <Box sx={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
                     flexWrap: 'wrap',
                     gap: 2
                 }}>
@@ -133,36 +133,36 @@ const Footer = () => {
                         {new Date().getFullYear()} Infinex Products. All rights reserved.
                     </Typography>
                     <Box sx={{ display: 'flex', gap: 1 }}>
-                        <IconButton sx={{ 
+                        <IconButton sx={{
                             color: '#4b5563',
-                            '&:hover': { 
+                            '&:hover': {
                                 color: '#2563eb',
                                 bgcolor: '#f1f5f9'
                             }
                         }}>
                             <FacebookIcon />
                         </IconButton>
-                        <IconButton sx={{ 
+                        <IconButton sx={{
                             color: '#4b5563',
-                            '&:hover': { 
+                            '&:hover': {
                                 color: '#2563eb',
                                 bgcolor: '#f1f5f9'
                             }
                         }}>
                             <TwitterIcon />
                         </IconButton>
-                        <IconButton sx={{ 
+                        <IconButton sx={{
                             color: '#4b5563',
-                            '&:hover': { 
+                            '&:hover': {
                                 color: '#2563eb',
                                 bgcolor: '#f1f5f9'
                             }
                         }}>
                             <InstagramIcon />
                         </IconButton>
-                        <IconButton sx={{ 
+                        <IconButton sx={{
                             color: '#4b5563',
-                            '&:hover': { 
+                            '&:hover': {
                                 color: '#2563eb',
                                 bgcolor: '#f1f5f9'
                             }

@@ -16,7 +16,7 @@ const Contact = () => {
                         <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
                             <LocationOnIcon sx={{ mr: 2, color: 'primary.main' }} />
                             <Typography variant="body1">
-                                Belgavi,<br />
+                                Belagavi,<br />
                                 Karnataka
                             </Typography>
                         </Box>
@@ -33,8 +33,7 @@ const Contact = () => {
                         <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
                             <EmailIcon sx={{ mr: 2, color: 'primary.main' }} />
                             <Typography variant="body1">
-                                info@infinexproducts.com<br />
-                                support@infinexproducts.com
+                                infinexproducts@gmail.com<br />
                             </Typography>
                         </Box>
                     </Grid>
